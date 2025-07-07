@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alims Concept and Integrated Services Limited</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f0f2f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes rotateBackAndForth {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(3deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-3deg); }
+      100% { transform: rotate(0deg); }
+    }
+    .rotate-section {
+      animation: rotateBackAndForth 6s infinite ease-in-out;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .service-icon {
+      font-size: 40px;
+      color: #00695c;
+    }
+    .card-transparent {
+      background-color: rgba(255, 255, 255, 0.85);
+      border: none;
+      border-radius: 50%;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card-transparent:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    .contact-form {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .contact-form:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    $1
+      border-radius: 50px;
+      padding: 8px 18px;
+    }
+    $1
+      animation: blink 1s infinite alternate;
+    }
+      @keyframes blink {
+      0% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+</style>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://via.placeholder.com/40x40?text=A" alt="Logo">
+        Alims Concept
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-down" data-aos-duration="1200">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Empowering Trade & Technology</h1>
+      <p class="lead">Across Africa and Beyond</p>
+      <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-5" id="services" data-aos="fade-left" data-aos-duration="1300">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card-transparent mx-auto" data-aos="fade-up" data-aos-duration="1000">
+            <div class="service-icon mb-2">🌾</div>
+            <h5>Agro-commodities</h5>
+            <p>We provide a wide range of high-quality agricultural commodities including grains, pulses, and oil seeds to meet the demands of both local and global markets. Our supply chain is structured to ensure timely delivery and compliance with international standards.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card-transparent mx-auto">
+            <div class="service-icon mb-2">💻</div>
+            <h5>Tech Solutions</h5>
+            <p>Our tech solutions cover software development, IT consulting, digital transformation, and smart automation services tailored to increase efficiency and drive innovation in any business environment.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card-transparent mx-auto">
+            <div class="service-icon mb-2">🚛</div>
+            <h5>Logistics</h5>
+            <p>We offer comprehensive logistics and distribution services, ensuring safe, fast, and reliable movement of goods across local and international destinations through strategic planning and modern technologies.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card-transparent mx-auto">
+            <div class="service-icon mb-2">🌍</div>
+            <h5>Exportation</h5>
+            <p>Our export division specializes in moving goods across borders with full documentation support, international trade compliance, and tracking to ensure timely and efficient deliveries to various regions.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card-transparent mx-auto">
+            <div class="service-icon mb-2">🛠️</div>
+            <h5>General Services</h5>
+            <p>We provide general business services including procurement, consultancy, project management, and outsourcing, offering flexible and customized solutions to businesses across different industries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Testimonials -->
+  <section class="py-5 bg-white" id="testimonials" data-aos="fade-up" data-aos-duration="1200" style="background: linear-gradient(to right, #ffffff, #f0f2f5);">
+    <div class="container">
+      <h2 class="text-center mb-5 display-6 fw-semibold text-primary">What Our Clients Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote class="blockquote text-center p-4 shadow rounded bg-light" style="max-width: 700px; margin: 0 auto;">
+              <p class="mb-4">“Alims Concept delivered our agro orders ahead of schedule. Fantastic team!”</p>
+              <footer class="blockquote-footer">Grace A., <cite title="Source Title">Agribiz Ventures</cite></footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+              <p class="mb-4">“Their tech team helped us digitalize our logistics—amazing results!”</p>
+              <footer class="blockquote-footer">Ibrahim S., <cite title="Source Title">CargoNet Nigeria</cite></footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+              <p class="mb-4">“Reliable, affordable, and professional. Highly recommended for export services.”</p>
+              <footer class="blockquote-footer">Chioma D., <cite title="Source Title">GlobalAgro</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</section>
+
+  <!-- About Us -->
+  <section class="bg-light py-5" id="about" data-aos="flip-left" data-aos-duration="1500">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">Alims Concept and Integrated Services Limited is a multidisciplinary company providing innovative solutions across agriculture, technology, logistics, and export. We are committed to delivering quality and building long-term partnerships.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-5" id="contact" data-aos="fade-up-right" data-aos-duration="1100">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form class="contact-form" data-aos="zoom-in-up" data-aos-duration="1300">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-0">&copy; 2025 Alims Concept and Integrated Services Limited. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
